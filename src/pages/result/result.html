@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Result
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>Hora</ion-label>
+    <ion-textarea [(ngModel)]="valor1" [ngModelOptions]="{standalone: true}"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Minutos</ion-label>
+    <ion-textarea [(ngModel)]="valor2" [ngModelOptions]="{standalone: true}"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Segundos</ion-label>
+    <ion-textarea [(ngModel)]="valor3" [ngModelOptions]="{standalone: true}"></ion-textarea>
+  </ion-item>
+  
+
+    <div padding>
+      <button ion-button round (click)="goBack()">Regresar</button>
+    </div>
+
+</ion-list>
